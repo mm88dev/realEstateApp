@@ -1,0 +1,333 @@
+<div class="main-welcome">
+
+
+
+  <div class="container text-center mt-5">
+    <div class="row">
+      <div class="col-lg-3 d-flex align-items-center">
+        <p class="h6 h6Info">Please enter bulidng info:</p>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="form-group">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon3">Bldg. number</span>
+            </div>
+            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" name="bulnum"
+              ng-model="apartmentInfo.buildingNum">
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-3 ">
+        <div class="form-group">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon3">Apt. number</span>
+            </div>
+            <input type="text" class="form-control" name="bulapt" id="basic-url" aria-describedby="basic-addon3"
+              ng-model="apartmentInfo.apartmentNum">
+          </div>
+
+
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="form-group">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon3">Date</span>
+            </div>
+            <input type="date" class="form-control" id="basic-url" aria-describedby="basic-addon3" 
+             ng-model="apartmentInfo.date">
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 col-6">
+
+
+        <div class="card mb-3 text-center">
+          <a href="#/rooms/:entrance">
+            <img style="width: 150px; height: 150px" class="card-img-top img-thumbnail" src="img/door96.png" alt="">
+            <div class="card-footer text-center">
+              <span>Entrance</span>
+            </div>
+          </a>
+        </div>
+
+
+
+
+
+      </div>
+      <div class="col-sm-4 col-6">
+
+
+        <div class="card mb-3 text-center">
+          <a href="#/rooms/:living">
+            <img style="width: 150px; height: 150px" class="card-img-top img-thumbnail" src="img/lroom96.png" alt="">
+            <div class="card-footer text-center">
+              <span>Living room</span>
+            </div>
+          </a>
+        </div>
+
+
+
+      </div>
+      <div class="col-sm-4 col-6">
+
+
+
+        <div class="card mb-3 text-center">
+          <a href="#/rooms/:kitchen">
+            <img style="width: 150px; height: 150px" class="card-img-top img-thumbnail" src="img/kitchen96.png" alt="">
+            <div class="card-footer text-center">
+              <span>Kitchen</span>
+            </div>
+          </a>
+        </div>
+
+
+
+
+      </div>
+      <div class="col-sm-4 col-6">
+        <div class="card mb-3 text-center">
+          <a href="#/rooms/:bathroom">
+            <img style="width: 150px; height: 150px" class="card-img-top img-thumbnail" src="img/shower96.png" alt="">
+            <div class="card-footer text-center">
+              <span>Master Bathroom</span>
+            </div>
+          </a>
+        </div>
+
+
+
+
+      </div>
+      <div class="col-sm-4 col-6">
+
+        <div class="card mb-3 text-center">
+          <a href="#/rooms/:bathroom1">
+            <img style="width: 150px; height: 150px" class="card-img-top img-thumbnail" src="img/bath96.png" alt="">
+            <div class="card-footer text-center">
+              <span>Guest Bathroom</span>
+            </div>
+          </a>
+        </div>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="col-sm-4 col-6">
+        <div class="card mb-3 text-center">
+          <a href="#/rooms/:bathroom2">
+            <img style="width: 150px; height: 150px" class="card-img-top img-thumbnail" src="img/jacuzzi96.png" alt="">
+            <div class="card-footer text-center">
+              <span>Guest Bathroom 2</span>
+            </div>
+          </a>
+        </div>
+
+
+
+
+
+      </div>
+      <div class="col-sm-4 col-6">
+
+        <div class="card mb-3 text-center">
+          <a href="#/rooms/:bedroom">
+            <img style="width: 150px; height: 150px" class="card-img-top img-thumbnail" src="img/watchtv96.png" alt="">
+            <div class="card-footer text-center">
+              <span>Master Bedroom</span>
+            </div>
+          </a>
+        </div>
+
+
+
+      </div>
+      <div class="col-sm-4 col-6">
+
+        <div class="card mb-3 text-center">
+          <a href="#/rooms/:bedroom1">
+            <img style="width: 150px; height: 150px" class="card-img-top img-thumbnail" src="img/inbed96.png" alt="">
+            <div class="card-footer text-center">
+              <span>Bedroom 2</span>
+            </div>
+          </a>
+        </div>
+
+
+
+
+      </div>
+      <div class="col-sm-4 col-6">
+
+        <div class="card mb-3 text-center">
+          <a href="#/rooms/:bedroom2">
+            <img style="width: 150px; height: 150px" class="card-img-top img-thumbnail" src="img/bed96.png" alt="">
+            <div class="card-footer text-center">
+              <span>Bedroom 3</span>
+            </div>
+          </a>
+        </div>
+
+
+
+
+
+      </div>
+      <div class="col-sm-4 col-6">
+
+        <div class="card mb-3 text-center">
+          <a href="#/rooms/:hallway">
+            <img style="width: 150px; height: 150px" class="card-img-top img-thumbnail" src="img/corridor96.png" alt="">
+            <div class="card-footer text-center">
+              <span>Hallway</span>
+            </div>
+          </a>
+        </div>
+
+
+
+
+
+      </div>
+      <div class="col-sm-4 col-6">
+
+        <div class="card mb-3 text-center">
+          <a href="#/rooms/:balcony">
+            <img style="width: 150px; height: 150px" class="card-img-top img-thumbnail" src="img/balcony96.png" alt="">
+            <div class="card-footer text-center">
+              <span>Balcony</span>
+            </div>
+          </a>
+        </div>
+
+
+
+      </div>
+      <div class="col-sm-4 col-6">
+
+        <div class="card mb-3 text-center">
+          <a href="#/rooms/:patio">
+            <img style="width: 150px; height: 150px" class="card-img-top img-thumbnail" src="img/table96.png" alt="">
+            <div class="card-footer text-center">
+              <span>Patio</span>
+            </div>
+          </a>
+        </div>
+
+
+
+      </div>
+      <div class="col-sm-4 col-6">
+
+        <div class="card mb-3 text-center">
+          <a href="#/rooms/:laundry">
+            <img style="width: 150px; height: 150px" class="card-img-top img-thumbnail" src="img/machine96.png" alt="">
+            <div class="card-footer text-center">
+              <span>Laundry</span>
+            </div>
+          </a>
+        </div>
+
+
+
+
+
+      </div>
+      <div class="col-sm-4 col-6">
+
+        <div class="card mb-3 text-center">
+          <a href="#/rooms/:clean">
+            <img style="width: 150px; height: 150px" class="card-img-top img-thumbnail" src="img/brush96.png" alt="">
+            <div class="card-footer text-center">
+              <span>Clean/Paint</span>
+            </div>
+          </a>
+        </div>
+
+      </div>
+      <div class="col-sm-4 col-12">
+        <div class="card mb-3 text-center">
+          <a href="#/rooms/:carpet">
+            <img style="width: 150px; height: 150px" class="card-img-top img-thumbnail" src="img/carpet96.png" alt="">
+            <div class="card-footer text-center">
+              <span>Carpet/Flooring</span>
+            </div>
+          </a>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="lastTwo row justify-content-around">
+      <div class="col-sm-4 col-6">
+
+        <div class="card mb-3 text-center">
+          <a href="#/rooms/:construction">
+            <img style="width: 150px; height: 150px" class="card-img-top img-thumbnail" src="img/construction96.png"
+              alt="">
+            <div class="card-footer text-center">
+              <span>Construction</span>
+            </div>
+          </a>
+        </div>
+
+
+      </div>
+
+      <div class="col-sm-4 col-6">
+
+        <div class="card mb-3 text-center">
+          <a href="#/rooms/:other">
+            <img style="width: 150px; height: 150px" class="card-img-top img-thumbnail" src="img/folder96.png" alt="">
+            <div class="card-footer text-center">
+              <span>Other</span>
+            </div>
+          </a>
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <div class="row mb-3">
+    <div class="col text-center">
+
+      <button type="button" class="btn btn-primary center-block" name="completed" completed-btn>COMPLETED</button>
+
+    </div>
+
+  </div>
+
+
+
+</div>

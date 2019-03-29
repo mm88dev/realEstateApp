@@ -1,0 +1,21 @@
+
+	<div class="login">
+		<div class="main">
+			<h2 class="display-5">Please login</h2>
+			<hr/>
+			<form id="form_id" method="post">
+				<label class="mb-0" for="username">User Name:</label></br>
+				<input class="form-control mb-0" type="text" name="username" id="username" ng-model="userCredidentials.username"
+					ng-disabled="userCredidentials.disabled"></br>
+
+				<label class="mb-0 mt-0" for="password">Password:</label></br>
+				<input type="password" name="password" id="password" class="form-control mb-3" ng-model="userCredidentials.password"
+					ng-disabled="userCredidentials.disabled"></br>
+
+				<input class="btn form-control" type="button" value="Login" id="submit" ng-click="validate()" ng-disabled="userCredidentials.disabled">
+			</form><br>
+			<span><b class="note">Note: </b> <span class="text-info"><i> Use following username and password.</i></span>
+				<br /><b class="valid"><b
+						class="note">Username: </b> skydream<br /><b class="note">Password: </b> skydreamweb</b></span>
+		</div>
+	</div>

@@ -1,0 +1,54 @@
+<div class="con-custom">
+    <div class="panel">
+        <div class="panel-heading text-center">
+            <a href="#/rooms" class="float-left btn btn-sm btn-info mt-1 ml-1">Home</a>
+            <h3 class="lead text-center display-5 pt-3"><strong>{{pageTitle}}</strong></h3>
+        </div>
+        <div class="float-left mb-2 mr-2">
+
+        </div>
+        <div class="panel-body">
+            <div class="table-responsive">
+                <table class="table table-stripped table-bordered datatable" ui-jq="dataTable"
+                    ui-options="dataTableOpt">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>SubCat</th>
+                            <th>Item</th>
+                            <th>$</th>
+                            <th>✓</th>
+                            <th>Link</th>
+
+                        </tr>
+                    </thead>
+                    <tbody ng-repeat="item in items">
+                        <tr>
+                            <td class="text-center">{{$index+1}}</td>
+                            <td class="text-left">{{item.name}}</td>
+                            <td class="text-left">{{item.description}}</td>
+                            <td class="text-center">{{item.price.toFixed(2)}}</td>
+                            <td>
+                                <input type="checkbox" class="checkbox-inline" data-index="{{$index}}"
+                                    data-item-id="{{item.id}}">
+                            </td>  
+                            <td class="text-center"><a href="#">link</a></td>
+                        </tr>
+                        <tr class="item-comment-parent">
+                            <td colspan="3">
+                                <textarea class="align-middle item-comment">Comment: </textarea>
+                            </td>
+                            <td colspan="1" class="align-middle"><input type="text"
+                                    name="quantity" id="quantity" placeholder="quantity"></td>
+                            <td colspan="2" class="align-middle item-comment-cell">
+                                <button id="confirmBtn" class="align-middle item-comment-btn"
+                                    data-item-id="{{item.id}}">Submit</button>
+                            </td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

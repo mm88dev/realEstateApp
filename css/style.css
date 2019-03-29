@@ -1,0 +1,371 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+  -webkit-touch-callout: none;
+  /* prevent callout to copy image, etc when tap to hold */
+  -webkit-text-size-adjust: none;
+  /* prevent webkit from resizing text to fit */
+  -webkit-user-select: none;
+  /* prevent copy paste, to allow, change 'none' to 'text' */
+  background-color: #e4e4e4;
+  background-image: linear-gradient(top, #a7a7a7 0%, #e4e4e4 51%);
+  background-image: -webkit-linear-gradient(top, #a7a7a7 0%, #e4e4e4 51%);
+  background-image: -ms-linear-gradient(top, #a7a7a7 0%, #e4e4e4 51%);
+  background-image: -webkit-gradient(linear,
+    left top,
+    left bottom,
+    color-stop(0, #a7a7a7),
+    color-stop(0.51, #e4e4e4));
+  background-attachment: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  /* text-transform:uppercase; */
+  width: 100%;
+}
+
+/* below line is used for online google font */
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+h2 {
+  padding: 30px 35px;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  color: #222;
+}
+
+hr {
+  margin: 10px -50px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin-bottom: 40px;
+}
+
+
+
+div.main {
+  background-color: #feffed;
+  /* width: 30%; */
+  padding: 10px 50px 25px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 15px;
+}
+
+div.main-welcome {
+  background-color: #feffed;
+  /* width: 95%;
+  padding: 10px 5px 10px; */
+  border: 2px solid gray;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+div.central {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+input[type="text"],
+input[type="password"] {
+  /* width: 100%;
+  height: 40px; */
+  padding: 5px;
+  /* margin-bottom: 5px;
+  margin-top: 5px; */
+  border: 2px solid #ccc;
+  color: #4f4f4f;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+label {
+  color: #464646;
+  text-shadow: 0 1px 0 #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+center {
+  font-size: 32px;
+}
+
+.note {
+  color: red;
+}
+
+.valid {
+  color: green;
+}
+
+.h6Info {
+  margin-bottom: 1rem !important;
+}
+
+.back {
+  text-decoration: none;
+  border: 1px solid rgb(0, 143, 255);
+  background-color: rgb(0, 214, 255);
+  padding: 3px 20px;
+  border-radius: 2px;
+  color: black;
+}
+
+input[type="button"] {
+  font-size: 16px;
+  background: linear-gradient(#ffbc00 5%, #ffdd7f 100%);
+  border: 1px solid #e5a900;
+  color: #4e4d4b;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+  padding: 0 0;
+  outline: none;
+}
+
+input[type="button"]:hover {
+  background: linear-gradient(#ffdd7f 5%, #ffbc00 100%);
+}
+
+.fugo {
+  float: right;
+}
+
+header {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.subnames {
+  text-align: center;
+  font-size: 12px;
+  color: black;
+}
+
+table tr th {
+  background: #337ab7;
+  color: white;
+  text-align: left;
+  vertical-align: center;
+}
+
+
+
+.panel {
+  /* font-size: 1.5vh; */
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #feffed;
+  width: 95%;
+  border: 2px solid gray;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  /* margin-top: 40px; */
+}
+
+.custom-btn {
+  width: 100% !important;
+}
+
+.con-custom {
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-top: 4vh;
+  display: flex;
+  justify-content: center;
+}
+
+th {
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+}
+
+.rooms-input {
+  display: flex;
+  align-items: flex-end;
+}
+
+.item-comment {
+  width: 100%;
+}
+
+.item-comment-parent {
+  display: none;
+}
+
+.item-comment-cell {
+  text-align: center;
+}
+
+.item-comment-btn {
+  font-size: 16px;
+  background: linear-gradient(#ffbc00 5%, #ffdd7f 100%);
+  border: 1px solid #e5a900;
+  color: #4e4d4b;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px 0;
+  outline: none;
+}
+
+.general-info-print {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#pdf-btn {
+  display: block;
+  margin: 0 auto;
+  font-size: 14px;
+  padding: 8px 18px;
+  border: 1px solid transparent;
+  background-color: #e5a900;
+  color: #4e4d4b;
+  transition: all 0.4s;
+  margin-bottom: 12px;
+}
+
+#pdf-btn:hover {
+  border: 1px solid #e5a900;
+  color: #e5a900;
+  background-color: #4e4d4b;
+}
+
+#quantity {
+  width: 70px;
+}
+
+#quantity::placeholder {
+  text-align: center;
+}
+
+@media(max-width: 560px) {
+  .panel {
+    font-size: 12px;
+  }
+
+  #quantity {
+    width: 45px;
+    height: 25px;
+
+  }
+
+  #confirmBtn {
+    width: 35px;
+    height: 30px;
+    font-size: 8px;
+  }
+
+  #quantity::placeholder {
+    font-size: 8px;
+    text-align: center;
+
+  }
+
+  table th,
+  table td,
+  table tr {
+    padding: 1px !important;
+    margin: 1px !important;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+}
+
+@media(max-width: 376px) {
+
+
+
+  .panel {
+    font-size: 8px;
+  }
+
+  #quantity {
+    width: 35px;
+    height: 25px;
+  }
+
+  #quantity::placeholder {
+    font-size: 6px;
+    text-align: center;
+  }
+
+  #confirmBtn {
+    width: 35px;
+    height: 25px;
+    font-size: 6px;
+  }
+
+  table th,
+  table td,
+  table tr {
+    padding: 1px !important;
+    margin: 1px !important;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif !important;
+  }
+
+}
+
+.outlineD {
+  border: 1px solid red;
+}
+
+
+
+
+/* .lastTwo{
+  margin-top: 1rem  ; 
+  border-top: 1px black dotted ;
+} */
+
+@media(max-width: 400px) {
+
+  span {
+    font-size: 2.8vw;
+  }
+
+}
