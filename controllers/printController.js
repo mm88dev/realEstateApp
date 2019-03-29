@@ -1,8 +1,11 @@
 angular.module("myApp")
     .controller("printController", ["$scope", "$rootScope", function($scope, $rootScope) {
 
-        $scope.entryDate = $rootScope.apartmentInfo.date.toString().split(" ");
-        $scope.entryDate = $scope.entryDate[1] + "-" + $scope.entryDate[2] + "-" + $scope.entryDate[3];
+        $scope.entryDate = "Date unknown";
+        if ($rootScope.apartmentInfo.date) {
+            $scope.entryDate = $rootScope.apartmentInfo.date.toString().split(" ");
+            $scope.entryDate = $scope.entryDate[1] + "-" + $scope.entryDate[2] + "-" + $scope.entryDate[3];
+        }
         $scope.totalPrice = 0;
         for (let i = 0; i < $rootScope.itemsToBeReplaced.length; i++) {
             if ($rootScope.itemsToBeReplaced[i].quantity !== undefined) {
