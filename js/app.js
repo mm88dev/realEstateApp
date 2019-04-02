@@ -6064,8 +6064,7 @@ angular.module('myApp', [
       price: 660.00,
       id: 1600
     }],
-    "other": [
-      {
+    "other": [{
         name: "OtherDoor",
         description: "Replace back door",
         price: 42.00,
@@ -6107,7 +6106,7 @@ angular.module('myApp', [
         price: 4.30,
         id: 1082
       }, {
-        name: "AppliancesGarbageDisposal",
+        name: "AppliancesGarbage Disposal",
         description: "Repair/Unclog",
         price: 33.00,
         id: 1083
@@ -6769,7 +6768,7 @@ angular.module('myApp', [
         $rootScope.items = $rootScope.allItems.balcony;
         $rootScope.pageTitle = "Balcony";
         setTimeout(reCheckBoxes, 1000);
-        break; 
+        break;
       case "/:construction":
         $rootScope.items = $rootScope.allItems.construction;
         $rootScope.pageTitle = "Construction";
